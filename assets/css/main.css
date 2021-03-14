@@ -2,5 +2,337 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  color: #222;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*,
+*:hover {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.default-btn {
+  background-color: #2a78ea;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
+  border: 2px solid #2a78ea;
+  line-height: 40px;
+  padding: 0 20px;
+  min-width: 150px;
+  display: inline-block;
+}
+
+.default-btn:hover {
+  background-color: transparent;
+  color: #2a78ea;
+}
+
+header .top-header {
+  line-height: 40px;
+  background-color: #2a78ea;
+}
+
+header .top-header #header-phones li {
+  border-left: 1px solid #fff;
+}
+
+header .top-header #header-phones li a {
+  padding: 0 20px;
+  color: #fff;
+  background-color: transparent;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 300;
+  z-index: 1;
+}
+
+header .top-header #header-phones li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -1;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+header .top-header #header-phones li a:hover {
+  color: #2a78ea;
+  background-color: #fff;
+}
+
+header .top-header #header-phones li a:hover::before {
+  top: 0;
+}
+
+header .top-header #header-phones li:nth-last-child(1) {
+  border-right: 1px solid #fff;
+}
+
+header .top-header h1 {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+header .top-header .social-links li a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #fff;
+}
+
+header .top-header .social-links li a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+header .main-header {
+  background-color: #fff;
+  line-height: 70px;
+}
+
+header .main-header #mainNav .main-logo-holder {
+  padding: 5px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 70px;
+}
+
+header .main-header #mainNav .main-logo-holder img {
+  height: 60px;
+  vertical-align: top;
+}
+
+header .main-header #mainNav .main-logo-holder:hover img {
+  opacity: 0.7;
+}
+
+header .main-header #mainNav #main-menu li a {
   color: #0648a9;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+
+header .main-header #mainNav #main-menu li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  background-color: #2a78ea;
+  border-radius: 0 0 5px 5px;
+  z-index: -1;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+header .main-header #mainNav #main-menu li a:hover {
+  color: #fff;
+}
+
+header .main-header #mainNav #main-menu li a:hover::before {
+  bottom: 0;
+}
+
+#hero .hero-slider .hero-slider-item {
+  position: relative;
+}
+
+#hero .hero-slider .hero-slider-item .hero-slider-item-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#hero .hero-slider .hero-slider-item .hero-slider-item-inner .wrapper {
+  position: relative;
+  height: 100%;
+}
+
+#hero .hero-slider .hero-slider-item .hero-slider-item-inner .wrapper .text-block {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#hero .hero-slider .hero-slider-item .hero-slider-item-inner .wrapper .text-block h3 {
+  color: #0648a9;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+#hero .hero-slider .slick-dots {
+  bottom: 0;
+  width: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 0 20px;
+}
+
+#hero .hero-slider .slick-dots li {
+  height: 24px;
+}
+
+#hero .hero-slider .slick-dots li button::before {
+  font-size: 18px;
+  color: #4e32ec;
+}
+
+#about-us {
+  padding: 80px 0;
+}
+
+#about-us .about-us-text {
+  text-align: center;
+}
+
+#about-us .about-us-text h3 {
+  font-weight: 300;
+}
+
+#about-us .about-us-text ul {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+#about-us .users-counter-slider {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 100px;
+}
+
+#about-us .users-counter-slider .counter-icon-holder {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-us .users-counter-slider .counter-icon-holder img,
+#about-us .users-counter-slider .counter-icon-holder i {
+  max-width: 60%;
+}
+
+#about-us .users-counter-slider p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#about-us .users-counter-slider p.counter-number {
+  font-size: 58px;
+  font-weight: 600;
+}
+
+#prices {
+  padding: 80px 0;
+  background-color: #e8e8e8;
+}
+
+#prices .prices-block {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#prices .prices-block h2 {
+  color: #fff;
+  background-color: #777;
+  padding: 0 30px 0 20px;
+  margin: 30px 0 20px;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 5px 30px 5px 5px;
+}
+
+#prices .prices-block p.small {
+  font-weight: 300;
+}
+
+#prices .prices-block table {
+  width: 100%;
+  padding: 10px;
+}
+
+#prices .prices-block table tr {
+  line-height: 30px;
+}
+
+#prices .prices-block table tr td {
+  font-weight: 300;
+}
+
+#prices .prices-block table tr th:nth-child(odd) {
+  width: 67%;
+}
+
+#prices .prices-block table tr th:nth-child(even) {
+  width: 33%;
 }

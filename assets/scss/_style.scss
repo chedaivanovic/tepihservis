@@ -1,0 +1,129 @@
+#hero {
+  .hero-slider {
+    .hero-slider-item {
+      position: relative;
+      .hero-slider-item-inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        .wrapper {
+          position: relative;
+          height: 100%;
+          .text-block {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            background-color: rgba(#fff, 0.8);
+            max-width: 420px;
+            padding: 30px;
+            border-radius: 20px;
+            transform: translateY(-50%);
+            h3 {
+              color: $text;
+              font-weight: 500;
+              font-size: 1.8rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .slick-dots {
+      bottom: 0;
+      width: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border-radius: 10px 10px 0 0;
+      padding: 0 20px;
+      li {
+        height: 24px;
+        button {
+          &::before {
+            font-size: 18px;
+            color: $color-2;
+          }
+        }
+      }
+    }
+  }
+}
+#about-us {
+  padding: 80px 0;
+  .about-us-text {
+    text-align: center;
+    h3 {
+      font-weight: 300;
+    }
+    ul {
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+  }
+  .users-counter-slider {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 100px;
+    .counter-icon-holder {
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img,
+      i {
+        max-width: 60%;
+      }
+    }
+    p {
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 0;
+      &.counter-number {
+        font-size: 58px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+#prices {
+  padding: 80px 0;
+  background-color: $border;
+  .prices-block {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    h2 {
+      color: #fff;
+      background-color: $gray;
+      padding: 0 30px 0 20px;
+      margin: 30px 0 20px;
+      display: inline-block;
+      line-height: 40px;
+      font-size: 20px;
+      font-weight: 300;
+      border-radius: 5px 30px 5px 5px;
+    }
+    p.small {
+      font-weight: 300;
+    }
+    table {
+      width: 100%;
+      padding: 10px;
+      tr {
+        line-height: 30px;
+        td {
+          font-weight: 300;
+        }
+        th:nth-child(odd) {
+          width: 67%;
+        }
+        th:nth-child(even) {
+          width: 33%;
+        }
+      }
+    }
+  }
+}
