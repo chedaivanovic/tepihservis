@@ -57,20 +57,20 @@
                 <li>- Mirise i dlake kućnih ljubimaca</li>
             </ul>
         </div>
-        <div class="users-counter-slider">
+        <div id="counter" class="users-counter-slider">
             <div class="users-counter-slider-item">
                 <div class="counter-icon-holder"><img src="assets/img/slider/users-solid.svg" alt=""></div>
-                <p class="counter-number"><span class="counter">500</span>+ </p>
+                <p class="counter-number"><span class="counter-value" data-count="500">0</span>+ </p>
                 <p>zadovoljnih klijenata</p>
             </div>
             <div class="users-counter-slider-item">
                 <div class="counter-icon-holder"><img src="assets/img/slider/carpet.svg" alt=""></div>
-                <p class="counter-number"><span class="counter">5000</span>+ m<sup>2</sup> </p>
+                <p class="counter-number"><span class="counter-value" data-count="5000">0</span>+ m<sup>2</sup> </p>
                 <p>opranog tepiha</p>
             </div>
             <div class="users-counter-slider-item">
                 <div class="counter-icon-holder"><img src="assets/img/slider/couch-solid.svg" alt=""></div>
-                <p class="counter-number"><span class="counter">2500</span>+ </p>
+                <p class="counter-number"><span class="counter-value" data-count="2500">0</span>+ </p>
                 <p>opranih komada nameštaja</p>
             </div>
         </div>
