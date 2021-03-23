@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +8,11 @@ body {
   color: $black;
   box-sizing: border-box;
   overflow-x: hidden;
+  transition: 0s padding linear;
+  &.header-sticky{
+    padding-top: 40px;
+    transition: none;
+  }
 }
 .wrapper {
   width: 100%;
@@ -36,7 +44,7 @@ ul {
     padding: 0;
   }
 }
-.default-btn{
+.default-btn {
   background-color: $color-1;
   border-radius: 5px;
   color: #fff;
@@ -48,7 +56,7 @@ ul {
   padding: 0 20px;
   min-width: 150px;
   display: inline-block;
-  &:hover{
+  &:hover {
     background-color: transparent;
     color: $color-1;
   }
@@ -93,7 +101,7 @@ header {
         }
       }
     }
-    h1{
+    h1 {
       font-size: 14px;
       color: #fff;
       margin-bottom: 0;
@@ -162,6 +170,57 @@ header {
           }
         }
       }
+    }
+    &.sticky{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      box-shadow: 0 5px 10px rgba($color-1, 0.1);
+    }
+  }
+}
+#contact {
+  .contact-left {
+    #contactForm {
+      textarea {
+        min-height: 150px;
+        resize: none;
+      }
+    }
+  }
+  .contact-right {
+    .vertical-line {
+      position: absolute;
+      left: -1px;
+      width: 2px;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(#fff, 0),
+        rgba(#fff, 0.8),
+        rgba(#fff, 0)
+      );
+    }
+    li p {
+      font-weight: 300;
+    }
+  }
+}
+#transport{
+  .transport-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .transport-content-inner{
+      background-color: rgba(#fff, 0.6);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 80%;
     }
   }
 }

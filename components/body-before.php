@@ -34,6 +34,7 @@
                 <ul id="main-menu" class="d-sm-flex">
                     <li><a href="#about-us">O nama</a></li>
                     <!-- <li><a href="#gallery">Galerija</a></li> -->
+                    <li><a href="#transport">Transport</a></li>
                     <li><a href="#prices">Cenovnik</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
