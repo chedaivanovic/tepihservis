@@ -162,11 +162,36 @@
 <section id="contact">
     <div class="wrapper">
         <div class="row">
-            <div class="col-12 col-md-8 bg-dark">
-
+            <div class="col-12 col-md-6 bg-dark">
+                <form id="contactForm" class="row py-5">
+                    <div class="col-12 text-center text-white mb-4">
+                        <h2>Pošaljite nam poruku ili upit</h2>
+                    </div>
+                    <div class="col-12 mb-3 col-md-6">
+                        <input class="w-100 form-control" type="text" placeholder="Vaše ime">
+                    </div>
+                    <div class="col-12 mb-3 col-md-6">
+                        <input class="w-100 form-control" type="text" placeholder="Vaš broj telefona">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input class="w-100 form-control" type="email" placeholder="Vaša E-mail adresa">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <textarea class="w-100 form-control" name="Poruka" id="poruka" placeholder="Vaša poruka"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                        <button class="btn btn-primary">Pošaljite</button>
+                    </div>
+                </form>
             </div>
-            <div class="col-12 col-md-4">
-
+            <div class="col-12 col-md-6 bg-secondary">
+                <ul id="contact-info">
+                    <li><h3>S&J Cleaning Company</h3></li>
+                    <li><p class="h4"><i class="fas fa-phone"></i> 065 87 000 38</p></li>
+                    <li><p class="h4"><i class="fas fa-phone"></i> 064 939 98 43</p></li>
+                    <li><p class="h4"><i class="fas fa-phone"></i> Lokacija 1: Beograd, Radnička 3</p></li>
+                    <li><p class="h4"><i class="fas fa-phone"></i> Lokacija 2: Barič, Obrenovac, Baričkih Boraca 14</p></li>
+                </ul>
             </div>
         </div>
     </div>
