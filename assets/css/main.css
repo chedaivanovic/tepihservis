@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +10,14 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  -webkit-transition: 0s padding linear;
+  transition: 0s padding linear;
+}
+
+body.header-sticky {
+  padding-top: 40px;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .wrapper {
@@ -178,6 +190,50 @@ header .main-header #mainNav #main-menu li a:hover {
 
 header .main-header #mainNav #main-menu li a:hover::before {
   bottom: 0;
+}
+
+header .main-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-box-shadow: 0 5px 10px rgba(42, 120, 234, 0.1);
+          box-shadow: 0 5px 10px rgba(42, 120, 234, 0.1);
+}
+
+#contact .contact-left #contactForm textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+#contact .contact-right .vertical-line {
+  position: absolute;
+  left: -1px;
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+#contact .contact-right li p {
+  font-weight: 300;
+}
+
+#transport .transport-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#transport .transport-content .transport-content-inner {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 80%;
 }
 
 #hero .hero-slider .hero-slider-item {

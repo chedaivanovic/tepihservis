@@ -76,6 +76,23 @@
         </div>
     </div>
 </section>
+<!-- Transport -->
+<section id="transport" class="position position-relative">
+    <img src="assets/img/van.jpg" alt="" class="w-100">
+    <div class="transport-content d-flex align-items-center">
+        <div class="wrapper ">
+            <div class="transport-content-inner">
+                <h2 class="display-4 mb-5">Transport i dolazak</h2>
+                <p class="h4 font-weight-light mb-4"><i class="fas fa-check-circle text-success"></i> Dolazimo po tepihe kojima je potrebna nega i vraćamo ih u najboljem mogućem stanju na vašu kućnu adresu.</p>
+                <p class="h4 font-weight-light mb-4"><i class="fas fa-check-circle text-success"></i> Ako se nalazite u Beogradu i imate više od 20 kvadratnih metara tepiha za pranje, transport vam nećemo naplatiti!</p>
+                <p class="h4 font-weight-light mb-4"><i class="fas fa-check-circle text-success"></i> Dolazimo na vašu adresu u slučaju da vam je potrebno pranje nameštaja!</p>
+                <p class="h4 font-weight-light mb-4"><i class="fas fa-check-circle text-success"></i> Za više od 4 komada nameštaja, dolazimo na vašu adresu besplatno!</p>
+                <p class="h4 font-weight-light mb-4"><i class="fas fa-check-circle text-success"></i> Zakazivanje se vrši danas za sutra (Danas za naredni radni dan) ali i danas za danas u pojedinim slučajevima!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Prices -->
 <section id="prices">
@@ -159,14 +176,17 @@
 </section>
 
 <!-- Contact -->
-<section id="contact">
+<section id="contact" class="bg-dark">
     <div class="wrapper">
         <div class="row">
-            <div class="col-12 col-md-6 bg-dark">
+            <div class="col-12 text-center pt-5 text-white">
+                <h2 class="display-4">Kontakt podaci</h2>
+            </div>
+            <div class="col-12 col-md-6 px-4 contact-left">
                 <form id="contactForm" class="row py-5">
-                    <div class="col-12 text-center text-white mb-4">
+                    <!-- <div class="col-12 text-center text-white mb-4">
                         <h2>Pošaljite nam poruku ili upit</h2>
-                    </div>
+                    </div> -->
                     <div class="col-12 mb-3 col-md-6">
                         <input class="w-100 form-control" type="text" placeholder="Vaše ime">
                     </div>
@@ -184,14 +204,25 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-6 bg-secondary">
-                <ul id="contact-info">
-                    <li><h3>S&J Cleaning Company</h3></li>
-                    <li><p class="h4"><i class="fas fa-phone"></i> 065 87 000 38</p></li>
-                    <li><p class="h4"><i class="fas fa-phone"></i> 064 939 98 43</p></li>
-                    <li><p class="h4"><i class="fas fa-phone"></i> Lokacija 1: Beograd, Radnička 3</p></li>
-                    <li><p class="h4"><i class="fas fa-phone"></i> Lokacija 2: Barič, Obrenovac, Baričkih Boraca 14</p></li>
+            <div class="col-12 col-md-6 px-4 d-flex align-items-center position-relative contact-right">
+                <ul id="contact-info" class="text-white">
+                    <li>
+                        <h3 class="h1 mb-3 font-weight-light">S&J Cleaning Company</h3>
+                    </li>
+                    <li>
+                        <p class="h4"><i class="fas fa-phone"></i> 065 87 000 38</p>
+                    </li>
+                    <li>
+                        <p class="h4"><i class="fas fa-phone"></i> 064 939 98 43</p>
+                    </li>
+                    <li>
+                        <p class="h4"><i class="fas fa-map-marker-alt"></i> 1: Beograd, Radnička 3</p>
+                    </li>
+                    <li>
+                        <p class="h4"><i class="fas fa-map-marker-alt"></i> 2: Barič, Obrenovac, Baričkih Boraca 14</p>
+                    </li>
                 </ul>
+                <span class="vertical-line"></span>
             </div>
         </div>
     </div>
