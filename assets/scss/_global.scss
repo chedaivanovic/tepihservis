@@ -64,7 +64,7 @@ ul {
 header {
   .top-header {
     line-height: 40px;
-    background-color: $color-1;
+    background: $color-1;
     #header-phones {
       li {
         border-left: 1px solid #fff;
@@ -95,9 +95,18 @@ header {
               top: 0;
             }
           }
+          @include under-sm{
+            padding: 0 5px;
+          }
         }
         &:nth-last-child(1) {
           border-right: 1px solid #fff;
+          @include under-sm{
+            border-right: none;
+          }
+        }
+        @include under-sm{
+          border-left: none;
         }
       }
     }
@@ -107,6 +116,9 @@ header {
       margin-bottom: 0;
       font-weight: 300;
       line-height: 40px;
+      @include under-md{
+        flex: 1 1 100%
+      }
     }
     .social-links {
       li {
@@ -169,6 +181,17 @@ header {
             }
           }
         }
+        @include under-md{
+          li{
+            a{
+              padding: 0 10px;
+              font-size: 1rem;
+            }
+          }
+        }
+        @include under-sm{
+          display: none;
+        }
       }
     }
     &.sticky{
@@ -221,6 +244,25 @@ header {
       border-radius: 20px;
       padding: 30px;
       max-width: 80%;
+    }
+  }
+}
+#main-footer{
+  background: linear-gradient(to right, $color-1, $color-2);
+  .copyright{
+    a{
+      color: rgba(#fff, 0.7);
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+  #footer-social{
+    a{
+      &:hover{
+        transform: scale(1.4) rotate(5deg);
+        opacity: 1;
+      }
     }
   }
 }

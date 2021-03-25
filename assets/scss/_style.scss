@@ -1,7 +1,11 @@
+// Hero section
 #hero {
   .hero-slider {
     .hero-slider-item {
       position: relative;
+      img{
+        width: 100%;
+      }
       .hero-slider-item-inner {
         position: absolute;
         top: 0;
@@ -50,10 +54,13 @@
     }
   }
 }
+//About us
 #about-us {
   padding: 80px 0;
   .about-us-text {
     text-align: center;
+    padding-bottom: 50px;
+
     h3 {
       font-weight: 300;
     }
@@ -62,11 +69,15 @@
       font-weight: 300;
     }
   }
+}
+// User Counter
+#user-counter {
+  padding: 100px 0;
+  background: linear-gradient(to right, $color-1, $color-2);
   .users-counter-slider {
     text-align: center;
     font-size: 24px;
     font-weight: 300;
-    padding-top: 100px;
     .counter-icon-holder {
       height: 250px;
       display: flex;
@@ -74,7 +85,8 @@
       align-items: center;
       img,
       i {
-        max-width: 60%;
+        width: auto;
+        max-height: 180px;
       }
     }
     p {
@@ -88,6 +100,7 @@
     }
   }
 }
+// Prices
 #prices {
   padding: 80px 0;
   background-color: $border;
@@ -127,3 +140,4 @@
     }
   }
 }
+// Contact

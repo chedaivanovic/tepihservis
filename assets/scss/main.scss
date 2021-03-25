@@ -9,4 +9,4 @@ $black: #222;
 $font: 'Open Sans', sans-serif;
 $fontfa : Font Awesome 5 Free;
 
-@import "global", "style", "responsive";
+@import "mixin", "global", "style", "responsive";
