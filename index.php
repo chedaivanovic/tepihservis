@@ -46,7 +46,7 @@
 <!-- About us -->
 <section id="about-us">
     <div class="wrapper">
-        <div class="about-us-text">
+        <div class="about-us-text"  data-aos="flip-left">
             <p class="display-4">Ko smo mi?</p>
             <h3>S&J je kompanija koja se dugi niz godina uspešno bavi dubinskim čišćenjem i pranjem mebliranog nameštaja, tepiha
                 i itisona, staza, uz veoma povoljne cene, najmodernijim i najkvalitetnijim mašinama i hemikalijama na tržištu, koje veoma efikasno uklanjaju:</h3>
@@ -57,19 +57,25 @@
                 <li>- Mirise i dlake kućnih ljubimaca</li>
             </ul>
         </div>
-        <div id="counter" class="users-counter-slider">
-            <div class="users-counter-slider-item">
-                <div class="counter-icon-holder"><img src="assets/img/slider/users-solid.svg" alt=""></div>
+    </div>
+</section>
+<section id="user-counter" class="text-white">
+    <div class="wrapper">
+        <div id="counter" class="users-counter-slider ">
+            <div class="users-counter-slider-item" data-aos="fade-right" data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
+                <div class="counter-icon-holder"><img src="assets/img/slider/korisnici.svg" alt=""></div>
                 <p class="counter-number"><span class="counter-value" data-count="500">0</span>+ </p>
                 <p>zadovoljnih klijenata</p>
             </div>
-            <div class="users-counter-slider-item">
-                <div class="counter-icon-holder"><img src="assets/img/slider/carpet.svg" alt=""></div>
+            <div class="users-counter-slider-item" data-aos="fade-up">
+                <div class="counter-icon-holder"><img src="assets/img/slider/tepih-servis.svg" alt=""></div>
                 <p class="counter-number"><span class="counter-value" data-count="5000">0</span>+ m<sup>2</sup> </p>
                 <p>opranog tepiha</p>
             </div>
-            <div class="users-counter-slider-item">
-                <div class="counter-icon-holder"><img src="assets/img/slider/couch-solid.svg" alt=""></div>
+            <div class="users-counter-slider-item" data-aos="fade-left" data-aos-offset="400"
+     data-aos-easing="ease-in-sine">
+                <div class="counter-icon-holder"><img src="assets/img/slider/dubinsko-pranje.svg" alt=""></div>
                 <p class="counter-number"><span class="counter-value" data-count="2500">0</span>+ </p>
                 <p>opranih komada nameštaja</p>
             </div>
@@ -81,7 +87,7 @@
     <img src="assets/img/van.jpg" alt="" class="w-100">
     <div class="transport-content d-flex align-items-center">
         <div class="wrapper ">
-            <div class="transport-content-inner">
+            <div class="transport-content-inner" data-aos="fade-right">
                 <h2 class="display-4 mb-5">Transport i dolazak</h2>
                 <p class="h4 font-weight-light mb-4"><i class="fas fa-check-circle text-success"></i> Dolazimo po tepihe kojima je potrebna nega i vraćamo ih u najboljem mogućem stanju na vašu kućnu adresu.</p>
                 <p class="h4 font-weight-light mb-4"><i class="fas fa-check-circle text-success"></i> Ako se nalazite u Beogradu i imate više od 20 kvadratnih metara tepiha za pranje, transport vam nećemo naplatiti!</p>
@@ -180,9 +186,9 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-12 text-center pt-5 text-white">
-                <h2 class="display-4">Kontakt podaci</h2>
+                <h2 class="display-4">Kontakt</h2>
             </div>
-            <div class="col-12 col-md-6 px-4 contact-left">
+            <div class="col-12 col-md-6 px-4 contact-left" data-aos="fade-right" data-aos-offset="200">
                 <form id="contactForm" class="row py-5">
                     <!-- <div class="col-12 text-center text-white mb-4">
                         <h2>Pošaljite nam poruku ili upit</h2>
@@ -200,11 +206,11 @@
                         <textarea class="w-100 form-control" name="Poruka" id="poruka" placeholder="Vaša poruka"></textarea>
                     </div>
                     <div class="col-12 d-flex justify-content-between">
-                        <button class="btn btn-primary">Pošaljite</button>
+                        <button type="submit" class="btn btn-primary">Pošaljite</button>
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-6 px-4 d-flex align-items-center position-relative contact-right">
+            <div class="col-12 col-md-6 px-4 d-flex align-items-center position-relative contact-right"  data-aos="fade-left" data-aos-offset="200">
                 <ul id="contact-info" class="text-white">
                     <li>
                         <h3 class="h1 mb-3 font-weight-light">S&J Cleaning Company</h3>
@@ -221,6 +227,7 @@
                     <li>
                         <p class="h4"><i class="fas fa-map-marker-alt"></i> 2: Barič, Obrenovac, Baričkih Boraca 14</p>
                     </li>
+                    <li><a href="mailto:office@tephisservissj.rs" class="h4 text-white font-weight-light"><i class="fas fa-at"></i> office@tepihservis.rs</a></li>
                 </ul>
                 <span class="vertical-line"></span>
             </div>
