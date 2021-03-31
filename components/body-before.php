@@ -26,7 +26,7 @@
         <div class="wrapper">
             <nav id="mainNav" class=" w-100 d-flex justify-content-between">
                 <a href="#hero" class="main-logo-holder">
-                    <img src="assets/img/S&J-logo.svg" alt="S&J Logo">
+                    <img src="assets/img/logo_sij_tepihservisidubinsko.svg" alt="S&J Logo">
                 </a>
                 <button id="navbar-toggler" class="d-block d-sm-none">
                     <i class="fas fa-bars"></i>
