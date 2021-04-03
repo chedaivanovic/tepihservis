@@ -2,7 +2,19 @@ $('.hero-slider').slick({
   dots: true
 });
 $('.users-counter-slider').slick({
-  slidesToShow: 3
+  slidesToShow: 3,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        arrows: true,
+        prevArrow: $('#counter-prev'),
+        nextArrow: $('#counter-next')
+      }
+    }
+  ]
 });
 
 
@@ -12,7 +24,6 @@ var sessionCount = 0;
 var headerMain = $(".main-header")[0];
 var headerSec = $(".top-header")[0];
 var body = $('body')[0];
-console.log(headerSec);
 $(window).on('scroll', function () {
 
   var oTop = $('#counter').offset().top - window.innerHeight;
@@ -50,4 +61,62 @@ $(window).on('scroll', function () {
 });
 AOS.init({
   duration: 1200,
+});
+
+let menuToggler = $('#navbar-toggler');
+let mainMenu = $('#main-menu');
+
+$(menuToggler).on('click', function () {
+  if (!$(mainMenu).hasClass('menu-resp-visible')) {
+    $(this).addClass('toggler-active');
+    $(mainMenu).addClass('menu-resp-visible');
+  } else {
+    $(this).removeClass('toggler-active');
+    $(mainMenu).removeClass('menu-resp-visible');
+  }
+});
+
+//CONTACT FORM
+//Exclude phone characters other than
+$('#user-phone').on('keypress', function (event) {
+  var regex = new RegExp("^[0-9 / + - - ()]+$");
+  var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+  if (!regex.test(key)) {
+     event.preventDefault();
+     return false;
+  }
+});
+
+//Contact
+$(document).ready(function (e){
+  $("#contactForm").on('submit',(function(e){
+    e.preventDefault();
+    $("#mail-status").hide();
+    $('#send-message').hide();
+    $('#loader-icon').show();
+    $.ajax({
+      url: "../contact/contact.php",
+      type: "POST",
+      dataType:'json',
+      data: {
+      "name":$('input[name="name"]').val(),
+      "email":$('input[name="email"]').val(),
+      "phone":$('input[name="phone"]').val(),
+      "message":$('textarea[name="message"]').val(),
+      "g-recaptcha-response":$('textarea[id="g-recaptcha-response"]').val()},				
+      success: function(response){
+      $("#mail-status").show();
+      $('#loader-icon').hide();
+      if(response.type == "error") {
+        $('#send-message').show();
+        $("#mail-status").attr("class","error");				
+      } else if(response.type == "message"){
+        $('#send-message').hide();
+        $("#mail-status").attr("class","success");							
+      }
+      $("#mail-status").html(response.text);	
+      },
+      error: function(){} 
+    });
+  }));
 });
