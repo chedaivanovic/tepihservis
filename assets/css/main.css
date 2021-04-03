@@ -717,6 +717,37 @@ header .main-header.sticky {
   resize: none;
 }
 
+#contact .contact-left #contactForm .button-and-recaptcha .recaptcha-holder {
+  height: 50px;
+  width: 195px;
+}
+
+#contact .contact-left #contactForm .button-and-recaptcha .recaptcha-holder .g-recaptcha {
+  -webkit-transform: scale(0.64102);
+          transform: scale(0.64102);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+#contact .contact-left #contactForm .button-and-recaptcha .button-or-loader {
+  width: 83px;
+}
+
+#contact .contact-left #contactForm .button-and-recaptcha .button-or-loader #send-message {
+  line-height: 50px;
+  padding: 0 10px;
+  border: none;
+}
+
+#contact .contact-left #contactForm .button-and-recaptcha .button-or-loader #loader-icon {
+  height: 50px;
+}
+
+#contact .contact-left #contactForm .button-and-recaptcha .button-or-loader #loader-icon img {
+  height: 50px;
+  margin: 0 auto;
+}
+
 #contact .contact-right .vertical-line {
   position: absolute;
   left: -1px;

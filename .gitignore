@@ -1,3 +1,5 @@
 node_modules/
 .vscode/
-contact/
+constant.php
+contact.php
+recaptcha/
