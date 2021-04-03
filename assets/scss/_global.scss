@@ -185,12 +185,19 @@ header {
               border-radius: 0 0 5px 5px;
               z-index: -1;
               transition: 0.3s all ease;
+              @include under-sm{
+                border-radius: 0;
+              }
             }
             &:hover {
               color: #fff;
               &::before {
                 bottom: 0;
               }
+            }
+            @include under-sm{
+              color: $color-1;
+              font-weight: 600;
             }
           }
         }
@@ -212,9 +219,42 @@ header {
           text-align: right;
           min-height: 100vh;
           opacity: 0;
+          &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(to right, rgba($color-1, 0.1), $color-1);
+          }
+          &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            background: $color-1;
+          }
           &.menu-resp-visible {
             opacity: 1;
             right: -5px;
+          }
+          li{
+            position: relative;
+            &::before{
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 2px;
+              background: linear-gradient(to right, rgba($color-1, 0.1), $color-1);
+            }
+            a{
+              padding-right: 30px;
+            }
           }
         }
       }

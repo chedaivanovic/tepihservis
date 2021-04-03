@@ -228,12 +228,25 @@ header .main-header #mainNav #main-menu li a::before {
   transition: 0.3s all ease;
 }
 
+@media screen and (max-width: 575px) {
+  header .main-header #mainNav #main-menu li a::before {
+    border-radius: 0;
+  }
+}
+
 header .main-header #mainNav #main-menu li a:hover {
   color: #fff;
 }
 
 header .main-header #mainNav #main-menu li a:hover::before {
   bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+  header .main-header #mainNav #main-menu li a {
+    color: #2a78ea;
+    font-weight: 600;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -255,9 +268,44 @@ header .main-header #mainNav #main-menu li a:hover::before {
     min-height: 100vh;
     opacity: 0;
   }
+  header .main-header #mainNav #main-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(42, 120, 234, 0.1)), to(#2a78ea));
+    background: linear-gradient(to right, rgba(42, 120, 234, 0.1), #2a78ea);
+  }
+  header .main-header #mainNav #main-menu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background: #2a78ea;
+  }
   header .main-header #mainNav #main-menu.menu-resp-visible {
     opacity: 1;
     right: -5px;
+  }
+  header .main-header #mainNav #main-menu li {
+    position: relative;
+  }
+  header .main-header #mainNav #main-menu li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(42, 120, 234, 0.1)), to(#2a78ea));
+    background: linear-gradient(to right, rgba(42, 120, 234, 0.1), #2a78ea);
+  }
+  header .main-header #mainNav #main-menu li a {
+    padding-right: 30px;
   }
 }
 
