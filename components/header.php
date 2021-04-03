@@ -36,6 +36,7 @@
 
     <!-- jQuery -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>	
 
     <!-- Css Files -->
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
