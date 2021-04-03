@@ -287,7 +287,32 @@
     #contactForm {
       textarea {
         min-height: 150px;
-        resize: none;
+        resize: none; 
+      }
+      .button-and-recaptcha {
+        .recaptcha-holder {
+          height: 50px;
+          width: 195px;
+          .g-recaptcha {
+            transform: scale(0.6410249);
+            transform-origin: top left;
+          }
+        }
+        .button-or-loader{
+          width: 83px;
+          #send-message{
+            line-height: 50px;
+            padding: 0 10px;
+            border: none;
+          }
+          #loader-icon{
+            height: 50px;
+            img{
+              height: 50px;
+              margin: 0 auto;
+            }
+          }
+        }
       }
     }
   }
@@ -330,5 +355,4 @@
   .success {
     background-color: #48e0a4;
   }
-  
 }
