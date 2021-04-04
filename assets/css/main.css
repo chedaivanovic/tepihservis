@@ -788,12 +788,13 @@ header .main-header.sticky {
 }
 
 #contact .contact-left #contactForm .button-and-recaptcha .button-or-loader #loader-icon {
+  display: none;
   height: 50px;
 }
 
 #contact .contact-left #contactForm .button-and-recaptcha .button-or-loader #loader-icon img {
-  height: 50px;
-  margin: 0 auto;
+  height: 100px;
+  margin: -25px auto;
 }
 
 #contact .contact-right .vertical-line {
