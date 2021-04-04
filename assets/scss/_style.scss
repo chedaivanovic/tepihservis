@@ -306,10 +306,11 @@
             border: none;
           }
           #loader-icon{
+            display: none;
             height: 50px;
             img{
-              height: 50px;
-              margin: 0 auto;
+              height: 100px;
+              margin: -25px auto;
             }
           }
         }

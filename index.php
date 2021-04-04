@@ -43,7 +43,7 @@
 <section id="hero">
     <div class="hero-slider">
         <div class="hero-slider-item">
-            <img src="assets/img/slider/1.jpg" alt="">
+            <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1.jpg" alt="Tepih servis i dubinsko pranje | Vrhunsko pranje">
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
                     <div class="text-block">
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="hero-slider-item">
-            <img src="assets/img/slider/2.jpg" alt="">
+            <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-2.jpg" alt="Tepih servis i dubinsko pranje | Nameštaj">
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
                     <div class="text-block">
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="hero-slider-item">
-            <img src="assets/img/slider/3.jpg" alt="">
+            <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3.jpg" alt="Tepih servis i dubinsko pranje | Cenovnik">
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
                     <div class="text-block">
@@ -106,17 +106,17 @@
         </div>
         <div id="counter" class="users-counter-slider ">
             <div class="users-counter-slider-item" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                <div class="counter-icon-holder"><img src="assets/img/slider/korisnici.svg" alt=""></div>
+                <div class="counter-icon-holder"><img src="assets/img/slider/korisnici.svg" alt="Tepih servis i dubinsko pranje | Korisnici"></div>
                 <p class="counter-number"><span class="counter-value" data-count="500">0</span>+ </p>
                 <p>zadovoljnih klijenata</p>
             </div>
             <div class="users-counter-slider-item" data-aos="fade-up">
-                <div class="counter-icon-holder"><img src="assets/img/slider/tepih-servis.svg" alt=""></div>
+                <div class="counter-icon-holder"><img src="assets/img/slider/tepih-servis.svg" alt="Tepih servis i dubinsko pranje | Tepisi"></div>
                 <p class="counter-number"><span class="counter-value" data-count="5000">0</span>+ m<sup>2</sup> </p>
                 <p>opranog tepiha</p>
             </div>
             <div class="users-counter-slider-item" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                <div class="counter-icon-holder"><img src="assets/img/slider/dubinsko-pranje.svg" alt=""></div>
+                <div class="counter-icon-holder"><img src="assets/img/slider/dubinsko-pranje.svg" alt="Tepih servis i dubinsko pranje | Nameštaj"></div>
                 <p class="counter-number"><span class="counter-value" data-count="2500">0</span>+ </p>
                 <p>opranih komada nameštaja</p>
             </div>
@@ -125,7 +125,7 @@
 </section>
 <!-- Transport -->
 <section id="transport" class="position position-relative">
-    <img src="assets/img/van.jpg" alt="Prevoz i dostava tepih i staza" class="transport-img">
+    <img src="assets/img/tepih-servis-i-dubinsko-pranje-transport.jpg" alt="Prevoz i dostava tepih i staza" class="transport-img">
     <div class="transport-content d-flex align-items-center">
         <div class="wrapper ">
             <div class="transport-content-inner" data-aos="fade-right">
@@ -255,7 +255,7 @@ require('constant.php');
                         </div>
                         <div class="button-or-loader d-flex justify-content-center">
                             <button id="send-message" type="submit" class="btn btn-primary">Pošaljite</button>
-                            <div id="loader-icon" style="display:none; height:50px">
+                            <div id="loader-icon">
                                 <img src="assets/img/loading.gif" />
                             </div>
                         </div>
@@ -280,7 +280,7 @@ require('constant.php');
                     <li>
                         <p class="h4"><i class="fas fa-map-marker-alt"></i> 2: Barič, Obrenovac, Baričkih Boraca 14</p>
                     </li>
-                    <li><a href="mailto:office@tephisservissj.rs" class="h4 text-white font-weight-light"><i class="fas fa-at"></i> office@tepihservis.rs</a></li>
+                    <li><a href="mailto:office@tepihservisidubinsko.rs" class="h4 text-white font-weight-light"><i class="fas fa-at"></i> office@tepihservisidubinsko.rs</a></li>
                 </ul>
                 <span class="vertical-line"></span>
             </div>
