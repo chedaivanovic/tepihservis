@@ -48,10 +48,10 @@
     <!-- OG -->
     <meta property="og:title" content="Tepih servis i dubinsko pranje nameštaja | Pranje tepiha već od 160rsd/m2">
     <meta property="og:site_name" content="Tepih servis i dubinsko pranje nameštaja S&J | Akcija: Cena već od 160 rsd/m2">
-    <meta property="og:url" content="https://tepihservisidubinsko.rs/">
+    <meta property="og:url" content="https://www.tepihservisidubinsko.rs/">
     <meta property="og:description" content="Tepih servis i dubinsko pranje nameštaja. Cena već od 160RSD po m2! Za 20m2 tepih besplatno preuzimanje na teritoriji Beograda!">
     <meta property="og:type" content="business.business">
-    <meta property="og:image" content="https://tepihservisidubinsko.rs/assets/img/tepih-servis-i-dubinsko-pranje-social.jpg">
+    <meta property="og:image" content="https://www.tepihservisidubinsko.rs/assets/img/tepih-servis-i-dubinsko-pranje-social.jpg">
     <meta property="business:contact_data:street_address" content="Radnička 3">
     <meta property="business:contact_data:locality" content="Beograd">
     <meta property="business:contact_data:region" content="Beograd">
@@ -63,11 +63,11 @@
     <meta name="twitter:title" content="Tepih servis i dubinsko pranje nameštaja | S&J | Akcija: Cena već od 160 rsd/m2">
     <meta name="twitter:site" content="@tepihservisidubinsko">
     <meta name="twitter:description" content="Tepih servis i dubinsko pranje nameštaja. Cena već od 160RSD po m2! Za 20m2 tepih besplatno preuzimanje na teritoriji Beograda!">
-    <meta name="twitter:image" content="https://tepihservisidubinsko.rs/assets/img/tepih-servis-i-dubinsko-pranje-social.jpg">
+    <meta name="twitter:image" content="https://www.tepihservisidubinsko.rs/assets/img/tepih-servis-i-dubinsko-pranje-social.jpg">
     <meta name="twitter:image:alt" content="Tepih servis i dubinsko pranje">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://tepihservisidubinsko.rs/">
+    <link rel="canonical" href="https://www.tepihservisidubinsko.rs/">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -92,12 +92,12 @@
         {
             "@context": "http://schema.org/",
             "@type": "LocalBusiness",
-            "@id": "https://tepihservisidubinsko.rs/",
+            "@id": "https://www.tepihservisidubinsko.rs/",
             "name": "Tepih servis i dubinsko pranje namestaja S&J | Akcija: Cena već od 160 rsd/m2",
-            "image": "https://tepihservisidubinsko.rs/assets/img/tepih-servis-i-dubinsko-pranje-social.jpg",
+            "image": "https://www.tepihservisidubinsko.rs/assets/img/tepih-servis-i-dubinsko-pranje-social.jpg",
             "priceRange": "$$",
             "telephone": "+381658700038",
-            "url": "https://tepihservisidubinsko.rs",
+            "url": "https://www.tepihservisidubinsko.rs",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Radnicka 3",
