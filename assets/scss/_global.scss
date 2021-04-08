@@ -212,13 +212,14 @@ header {
         @include under-sm {
           position: absolute;
           top: 100%;
-          right: -300px;
+          right: -5px;
           background-color: #fff;
           z-index: 1;
-          min-width: 300px;
+          width: 0;
           text-align: right;
           min-height: 100vh;
           opacity: 0;
+          overflow: hidden;
           &::before{
             content: '';
             position: absolute;
@@ -239,7 +240,7 @@ header {
           }
           &.menu-resp-visible {
             opacity: 1;
-            right: -5px;
+            width: 300px;
           }
           li{
             position: relative;

@@ -25,7 +25,7 @@
     <div class="main-header">
         <div class="wrapper">
             <nav id="mainNav" class=" w-100 d-flex justify-content-between align-items-center">
-                <a href="#hero" class="main-logo-holder">
+                <a href="#content" class="main-logo-holder">
                     <img src="assets/img/tepih-servis-i-dubinsko-pranje-logo.svg" alt="Tepih servis i dubinsko pranje Logo">
                 </a>
                 <button id="navbar-toggler" class="d-block d-sm-none">
