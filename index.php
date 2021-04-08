@@ -159,7 +159,7 @@
                     </tr>
                     <tr>
                         <td class="price-details">Mašinsko dubinsko pranje tepiha sa ispiranjem</td>
-                        <td class="money-price">180 RSD / m<sup>2</sup></td>
+                        <td class="money-price">od 160 RSD / m<sup>2</sup></td>
                     </tr>
                 </table>
                 <p class="small text-danger">*Za pranje tepiha u zbiru većih od 20 m<sup>2</sup>, dobijate besplatan prevoz! <span>(Važi samo za područje Beograda)</span></p>
@@ -195,7 +195,7 @@
                     </tr>
                     <tr>
                         <td class="price-details">Ugaone garniture</td>
-                        <td class="money-price">700 RSD / po sedišnom mestu</td>
+                        <td class="money-price">700 RSD / po sedalnom delu</td>
                     </tr>
                 </table>
                 <h2 class="prices-title">Čišćenje dušeka</h2>
@@ -278,9 +278,9 @@ require('constant.php');
                         <p class="h4"><i class="fas fa-map-marker-alt"></i> 1: Beograd, Radnička 3</p>
                     </li>
                     <li>
-                        <p class="h4"><i class="fas fa-map-marker-alt"></i> 2: Barič, Obrenovac, Baričkih Boraca 14</p>
+                        <p class="h4"><i class="fas fa-map-marker-alt"></i> 2: Barič, Obrenovac, Baričkih Boraca 10b</p>
                     </li>
-                    <li><a href="mailto:office@tepihservisidubinsko.rs" class="h4 text-white font-weight-light"><i class="fas fa-at"></i> office@tepihservisidubinsko.rs</a></li>
+                    <li><a href="mailto:office@tepihservisidubinsko.rs" class="h4 text-white font-weight-light contact-mail"><i class="fas fa-at"></i> <span>office@tepihservisidubinsko.rs</span></a></li>
                 </ul>
                 <span class="vertical-line"></span>
             </div>

@@ -76,6 +76,16 @@ $(menuToggler).on('click', function () {
   }
 });
 
+const mainMenuItems = $('#main-menu li a');
+for(let i = 0; i < mainMenuItems.length; i++) {
+ $(mainMenuItems[i]).on('click', function(){
+  if($(mainMenu).hasClass('menu-resp-visible')){
+    $(mainMenu).removeClass('menu-resp-visible');
+    $(menuToggler.removeClass('toggler-active'));
+  }
+ })
+}
+
 //CONTACT FORM
 //Exclude phone characters other than
 $('#user-phone').on('keypress', function (event) {
