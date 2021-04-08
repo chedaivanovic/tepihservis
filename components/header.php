@@ -85,7 +85,7 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css?ver=1.0.1">
+    <link rel="stylesheet" href="assets/css/main.css?ver=1.0.2">
 
     <!-- Schema -->
     <script type="application/ld+json">
