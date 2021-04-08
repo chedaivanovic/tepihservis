@@ -270,7 +270,7 @@ header .main-header #mainNav #main-menu li a:hover::before {
     overflow: hidden;
   }
   header .main-header #mainNav #main-menu::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -280,7 +280,7 @@ header .main-header #mainNav #main-menu li a:hover::before {
     background: linear-gradient(to right, rgba(42, 120, 234, 0.1), #2a78ea);
   }
   header .main-header #mainNav #main-menu::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -296,7 +296,7 @@ header .main-header #mainNav #main-menu li a:hover::before {
     position: relative;
   }
   header .main-header #mainNav #main-menu li::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -397,6 +397,32 @@ header .main-header.sticky {
           transform-origin: center;
   -webkit-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
+}
+
+.page-404 {
+  background-color: darkslateblue;
+}
+
+.page-404 .page-404-content {
+  min-height: calc(100vh - 166px);
+}
+
+@media screen and (max-width: 767px) {
+  .page-404 .page-404-content {
+    min-height: calc(100vh - 206px);
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .page-404 .page-404-content {
+    min-height: calc(100vh - 230px);
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .page-404 .page-404-content {
+    min-height: calc(100vh - 254px);
+  }
 }
 
 #hero {
