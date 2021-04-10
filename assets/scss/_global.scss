@@ -185,7 +185,7 @@ header {
               border-radius: 0 0 5px 5px;
               z-index: -1;
               transition: 0.3s all ease;
-              @include under-sm{
+              @include under-sm {
                 border-radius: 0;
               }
             }
@@ -195,7 +195,7 @@ header {
                 bottom: 0;
               }
             }
-            @include under-sm{
+            @include under-sm {
               color: $color-1;
               font-weight: 600;
             }
@@ -220,17 +220,21 @@ header {
           min-height: 100vh;
           opacity: 0;
           overflow: hidden;
-          &::before{
-            content: '';
+          &::before {
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(to right, rgba($color-1, 0.1), $color-1);
+            background: linear-gradient(
+              to right,
+              rgba($color-1, 0.1),
+              $color-1
+            );
           }
-          &::after{
-            content: '';
+          &::after {
+            content: "";
             position: absolute;
             top: 0;
             bottom: 0;
@@ -242,18 +246,22 @@ header {
             opacity: 1;
             width: 300px;
           }
-          li{
+          li {
             position: relative;
-            &::before{
-              content: '';
+            &::before {
+              content: "";
               position: absolute;
               bottom: 0;
               left: 0;
               right: 0;
               height: 2px;
-              background: linear-gradient(to right, rgba($color-1, 0.1), $color-1);
+              background: linear-gradient(
+                to right,
+                rgba($color-1, 0.1),
+                $color-1
+              );
             }
-            a{
+            a {
               padding-right: 30px;
             }
           }
@@ -273,7 +281,6 @@ header {
     }
   }
 }
-
 
 #main-footer {
   background: linear-gradient(to right, $color-1, $color-2);
@@ -324,19 +331,33 @@ header {
   &.toggler-active {
     .burger-line {
       &.burger-line-1 {
-        top:50%;
+        top: 50%;
         transform-origin: center;
         transform: translateY(-50%) rotate(45deg);
-
       }
       &.burger-line-2 {
         opacity: 0;
       }
       &.burger-line-3 {
-        top:50%;
+        top: 50%;
         transform-origin: center;
         transform: translateY(-50%) rotate(-45deg);
       }
+    }
+  }
+}
+.page-404 {
+  background-color: darkslateblue;
+  .page-404-content {
+    min-height: calc(100vh - 166px);
+    @include under-md{
+      min-height: calc(100vh - 206px);
+    }
+    @media screen and (max-width:552px) {
+      min-height: calc(100vh - 230px);
+    }
+    @media screen and (max-width:335px) {
+      min-height: calc(100vh - 254px);
     }
   }
 }

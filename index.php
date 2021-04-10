@@ -256,7 +256,7 @@ require('constant.php');
                         <div class="button-or-loader d-flex justify-content-center">
                             <button id="send-message" type="submit" class="btn btn-primary">Pošaljite</button>
                             <div id="loader-icon">
-                                <img src="assets/img/loading.gif" />
+                                <img src="assets/img/loading.gif" alt="Tepih servis i dubinsko S&J | Loading"/>
                             </div>
                         </div>
                     </div>
