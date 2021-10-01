@@ -82,10 +82,10 @@
 
     <!-- Css Files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css?ver=2.0.0">
+    <link rel="stylesheet" href="assets/css/main.min.css?ver=2.0.0">
 
     <!-- Schema -->
     <script type="application/ld+json">
@@ -122,6 +122,6 @@
         document.addEventListener('DOMContentLoaded', function(event){
             setTimeout(function(){
             document.getElementsByTagName('body')[0].style.opacity = '1';
-            },100);
+            },50);
         });
     </script>

@@ -43,7 +43,10 @@
 <section id="hero">
     <div class="hero-slider">
         <div class="hero-slider-item">
-            <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1.jpg" alt="Tepih servis i dubinsko pranje | Vrhunsko pranje">
+            <picture>
+                <source media="(min-width:650px)" srcset="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1.jpg">
+                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1-m.jpg" alt="Tepih servis i dubinsko pranje | Vrhunsko pranje">
+            </picture>
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
                     <div class="text-block">
@@ -54,7 +57,10 @@
             </div>
         </div>
         <div class="hero-slider-item">
-            <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-2.jpg" alt="Tepih servis i dubinsko pranje | Nameštaj">
+            <picture>
+                <source media="(min-width:650px)" srcset="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-2.jpg">
+                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-2-m.jpg" alt="Tepih servis i dubinsko pranje | Nameštaj">
+            </picture>
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
                     <div class="text-block">
@@ -65,7 +71,10 @@
             </div>
         </div>
         <div class="hero-slider-item">
-            <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3.jpg" alt="Tepih servis i dubinsko pranje | Cenovnik">
+        <picture>
+                <source media="(min-width:650px)" srcset="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3.jpg">
+                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3-m.jpg" alt="Tepih servis i dubinsko pranje | Cenovnik">
+            </picture>
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
                     <div class="text-block">
@@ -106,17 +115,17 @@
         </div>
         <div id="counter" class="users-counter-slider ">
             <div class="users-counter-slider-item" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                <div class="counter-icon-holder"><img src="assets/img/slider/korisnici.svg" alt="Tepih servis i dubinsko pranje | Korisnici"></div>
+                <div class="counter-icon-holder"><img  loading="lazy" data-src="assets/img/slider/korisnici.svg" alt="Tepih servis i dubinsko pranje | Korisnici"></div>
                 <p class="counter-number"><span class="counter-value" data-count="500">0</span>+ </p>
                 <p>zadovoljnih klijenata</p>
             </div>
             <div class="users-counter-slider-item" data-aos="fade-up">
-                <div class="counter-icon-holder"><img src="assets/img/slider/tepih-servis.svg" alt="Tepih servis i dubinsko pranje | Tepisi"></div>
+                <div class="counter-icon-holder"><img  loading="lazy" data-src="assets/img/slider/tepih-servis.svg" alt="Tepih servis i dubinsko pranje | Tepisi"></div>
                 <p class="counter-number"><span class="counter-value" data-count="5000">0</span>+ m<sup>2</sup> </p>
                 <p>opranog tepiha</p>
             </div>
             <div class="users-counter-slider-item" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                <div class="counter-icon-holder"><img src="assets/img/slider/dubinsko-pranje.svg" alt="Tepih servis i dubinsko pranje | Nameštaj"></div>
+                <div class="counter-icon-holder"><img  loading="lazy" data-src="assets/img/slider/dubinsko-pranje.svg" alt="Tepih servis i dubinsko pranje | Nameštaj"></div>
                 <p class="counter-number"><span class="counter-value" data-count="2500">0</span>+ </p>
                 <p>opranih komada nameštaja</p>
             </div>
@@ -125,7 +134,7 @@
 </section>
 <!-- Transport -->
 <section id="transport" class="position position-relative">
-    <img src="assets/img/tepih-servis-i-dubinsko-pranje-transport.jpg" alt="Prevoz i dostava tepih i staza" class="transport-img">
+    <img  loading="lazy" data-src="assets/img/tepih-servis-i-dubinsko-pranje-transport.jpg" alt="Prevoz i dostava tepih i staza" class="transport-img">
     <div class="transport-content d-flex align-items-center">
         <div class="wrapper ">
             <div class="transport-content-inner" data-aos="fade-right">
@@ -254,7 +263,7 @@ require('constant.php');
                         <div class="button-or-loader d-flex justify-content-center">
                             <button id="send-message" type="submit" class="btn btn-primary">Pošaljite</button>
                             <div id="loader-icon">
-                                <img src="assets/img/loading.gif" alt="Tepih servis i dubinsko S&J | Loading"/>
+                                <img  loading="lazy" data-src="assets/img/loading.gif" alt="Tepih servis i dubinsko S&J | Loading"/>
                             </div>
                         </div>
                     </div>
