@@ -8,12 +8,12 @@
                 </ul>
                 <ul class="social-links d-flex d-md-none">
                     <li>
-                        <a target="_blank" class="fb-icon" href="https://www.facebook.com/SJ-Cleaner-Company-102957035123168" target="_blank">
+                        <a rel="noopener" target="_blank" class="fb-icon" href="https://www.facebook.com/SJ-Cleaner-Company-102957035123168">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" class="insta-icon" href="https://www.instagram.com/s_j_cleaner_company9/" target="_blank">
+                        <a rel="noopener" target="_blank" class="insta-icon" href="https://www.instagram.com/s_j_cleaner_company9/">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
