@@ -131,9 +131,8 @@
             <div class="transport-content-inner" data-aos="fade-right">
                 <h2>Transport i dolazak</h2>
                 <p><i class="fas fa-check-circle text-success"></i> Dolazimo po tepihe kojima je potrebna nega i vraćamo ih u najboljem mogućem stanju na vašu kućnu adresu.</p>
-                <p><i class="fas fa-check-circle text-success"></i> Ako se nalazite u Beogradu i imate više od 20 kvadratnih metara tepiha za pranje, transport vam nećemo naplatiti!</p>
+                <p><i class="fas fa-check-circle text-success"></i> Besplatan prevoz tepiha za sve delove grada, nezavisno od kvadrature!</p>
                 <p><i class="fas fa-check-circle text-success"></i> Dolazimo na vašu adresu u slučaju da vam je potrebno pranje nameštaja!</p>
-                <p><i class="fas fa-check-circle text-success"></i> Za više od 4 komada nameštaja, dolazimo na vašu adresu besplatno!</p>
                 <p><i class="fas fa-check-circle text-success"></i> Zakazivanje se vrši danas za sutra (Danas za naredni radni dan) ali i danas za danas u pojedinim slučajevima!</p>
             </div>
         </div>
@@ -159,10 +158,9 @@
                     </tr>
                     <tr>
                         <td class="price-details">Mašinsko dubinsko pranje tepiha sa ispiranjem</td>
-                        <td class="money-price">od 160 RSD / m<sup>2</sup></td>
+                        <td class="money-price">od 180 RSD / m<sup>2</sup></td>
                     </tr>
                 </table>
-                <p class="small text-danger">*Za pranje tepiha u zbiru većih od 20 m<sup>2</sup>, dobijate besplatan prevoz! <span>(Važi samo za područje Beograda)</span></p>
                 <h2 class="prices-title">Čišćenje i pranje nameštaja</h2>
                 <table>
                     <tr>
