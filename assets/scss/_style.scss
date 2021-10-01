@@ -8,8 +8,8 @@
       img {
         width: 100%;
         @include under-md {
-          width: auto;
-          height: 300px;
+          width: 100%;
+          
         }
       }
       .hero-slider-item-inner {

@@ -122,6 +122,6 @@
         document.addEventListener('DOMContentLoaded', function(event){
             setTimeout(function(){
             document.getElementsByTagName('body')[0].style.opacity = '1';
-            },100);
+            },50);
         });
     </script>
