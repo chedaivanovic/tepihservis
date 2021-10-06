@@ -90,6 +90,9 @@ header {
           font-size: 1.25rem;
           font-weight: 300;
           z-index: 1;
+          svg{
+            width: 20px;
+          }
           &::before {
             content: "";
             position: absolute;
@@ -139,6 +142,9 @@ header {
           font-size: 1.5rem;
           margin-right: 15px;
           color: #fff;
+          svg{
+            height: 20px;
+          }
           &:hover {
             transform: scale(1.3);
           }
@@ -294,6 +300,9 @@ header {
   }
   #footer-social {
     a {
+      svg{
+        height: 30px;
+      }
       &:hover {
         transform: scale(1.4) rotate(5deg);
         opacity: 1;

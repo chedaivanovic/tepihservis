@@ -139,6 +139,18 @@
       }
     }
   }
+  #counter-slider-control{
+    button{
+      background: transparent;
+      border: none;
+      svg{
+        width: 18px;
+        path{
+          fill: #fff;
+        }
+      }
+    }
+  }
 }
 //Transport
 #transport {
@@ -172,6 +184,12 @@
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
         font-weight: 300;
+        svg{
+          width: 24px;
+          path{
+            fill:#19a719;
+          }
+        }
       }
       @include under-xl {
         max-width: 100vw;
@@ -343,8 +361,11 @@
         rgba(#fff, 0)
       );
     }
-    li p {
+    li p, li a {
       font-weight: 300;
+      svg{
+        width: 24px;
+      }
     }
     @media screen and (max-width: 390px) {
       .contact-mail {

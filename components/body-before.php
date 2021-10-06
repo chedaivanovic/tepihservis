@@ -3,18 +3,18 @@
         <div class="wrapper">
             <div class="d-flex justify-content-between w-100 flex-wrap top-header-holder">
                 <ul id="header-phones" class="d-flex">
-                    <li><a href="tel:+381658700038"><span class="d-block d-sm-none"><i class="fas fa-phone"></i> 1</span><span class="d-none d-sm-block">065/87-000-38</span></a></li>
-                    <li><a href="tel:+0649399843"><span class="d-block d-sm-none"><i class="fas fa-phone"></i> 2</span><span class="d-none d-sm-block">064/939-98-43</span></a></li>
+                    <li><a href="tel:+381658700038"><span class="d-block d-sm-none"><?php echo $iconPhone; ?> 1</span><span class="d-none d-sm-block">065/87-000-38</span></a></li>
+                    <li><a href="tel:+0649399843"><span class="d-block d-sm-none"><?php echo $iconPhone; ?> 2</span><span class="d-none d-sm-block">064/939-98-43</span></a></li>
                 </ul>
                 <ul class="social-links d-flex d-md-none">
                     <li>
                         <a rel="noopener" target="_blank" class="fb-icon" href="https://www.facebook.com/SJ-Cleaner-Company-102957035123168">
-                            <i class="fab fa-facebook-f"></i>
+                            <?php echo $iconFb; ?>
                         </a>
                     </li>
                     <li>
                         <a rel="noopener" target="_blank" class="insta-icon" href="https://www.instagram.com/s_j_cleaner_company9/">
-                            <i class="fab fa-instagram"></i>
+                            <?php echo $iconInsta; ?>
                         </a>
                     </li>
                 </ul>

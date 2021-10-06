@@ -73,19 +73,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/9ebe8cbaa6.js" crossorigin="anonymous"></script>
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Css Files -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/slick-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.min.css?ver=2.0.0">
+    <link rel="stylesheet" href="assets/css/main.min.css?ver=2.0.2">
 
     <!-- Schema -->
     <script type="application/ld+json">
@@ -115,6 +108,7 @@
             "sameAs": ["https://www.facebook.com/SJ-Cleaner-Company-102957035123168", "https://www.instagram.com/s_j_cleaner_company9/"]
         }
     </script>
+    <?php require_once('components/icons.php'); ?>
 </head>
 
 <body style="opacity:0;" id="content">

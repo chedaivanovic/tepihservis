@@ -9,4 +9,4 @@ $black: #222;
 $font: 'Open Sans', sans-serif;
 $fontfa : Font Awesome 5 Free;
 
-@import "mixin", "global", "style", "responsive";
+@import "aos", "slick-theme", "slick", "bootstrap", "mixin", "global", "style", "responsive";
