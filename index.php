@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="hero-slider-item">
-        <picture>
+            <picture>
                 <source media="(min-width:650px)" srcset="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3.jpg">
                 <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3-m.jpg" alt="Tepih servis i dubinsko pranje | Cenovnik">
             </picture>
@@ -107,25 +107,25 @@
     <div class="wrapper">
         <div class="w-100 d-flex d-lg-none justify-content-center" id="counter-slider-control">
             <button id="counter-prev" class="btn text-white">
-                <i class="fas fa-chevron-left"></i>
+                <?php echo $iconChevLeft; ?>
             </button>
             <button id="counter-next" class="btn text-white">
-                <i class="fas fa-chevron-right"></i>
+                <?php echo $iconChevRight; ?>
             </button>
         </div>
         <div id="counter" class="users-counter-slider ">
             <div class="users-counter-slider-item" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                <div class="counter-icon-holder"><img  loading="lazy" data-src="assets/img/slider/korisnici.svg" alt="Tepih servis i dubinsko pranje | Korisnici"></div>
+                <div class="counter-icon-holder"><img loading="lazy" data-src="assets/img/slider/korisnici.svg" alt="Tepih servis i dubinsko pranje | Korisnici"></div>
                 <p class="counter-number"><span class="counter-value" data-count="500">0</span>+ </p>
                 <p>zadovoljnih klijenata</p>
             </div>
             <div class="users-counter-slider-item" data-aos="fade-up">
-                <div class="counter-icon-holder"><img  loading="lazy" data-src="assets/img/slider/tepih-servis.svg" alt="Tepih servis i dubinsko pranje | Tepisi"></div>
+                <div class="counter-icon-holder"><img loading="lazy" data-src="assets/img/slider/tepih-servis.svg" alt="Tepih servis i dubinsko pranje | Tepisi"></div>
                 <p class="counter-number"><span class="counter-value" data-count="5000">0</span>+ m<sup>2</sup> </p>
                 <p>opranog tepiha</p>
             </div>
             <div class="users-counter-slider-item" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                <div class="counter-icon-holder"><img  loading="lazy" data-src="assets/img/slider/dubinsko-pranje.svg" alt="Tepih servis i dubinsko pranje | Nameštaj"></div>
+                <div class="counter-icon-holder"><img loading="lazy" data-src="assets/img/slider/dubinsko-pranje.svg" alt="Tepih servis i dubinsko pranje | Nameštaj"></div>
                 <p class="counter-number"><span class="counter-value" data-count="2500">0</span>+ </p>
                 <p>opranih komada nameštaja</p>
             </div>
@@ -134,15 +134,15 @@
 </section>
 <!-- Transport -->
 <section id="transport" class="position position-relative">
-    <img  loading="lazy" data-src="assets/img/tepih-servis-i-dubinsko-pranje-transport.jpg" alt="Prevoz i dostava tepih i staza" class="transport-img">
+    <img loading="lazy" data-src="assets/img/tepih-servis-i-dubinsko-pranje-transport.jpg" alt="Prevoz i dostava tepih i staza" class="transport-img">
     <div class="transport-content d-flex align-items-center">
         <div class="wrapper ">
             <div class="transport-content-inner" data-aos="fade-right">
                 <h2>Transport i dolazak</h2>
-                <p><i class="fas fa-check-circle text-success"></i> Dolazimo po tepihe kojima je potrebna nega i vraćamo ih u najboljem mogućem stanju na vašu kućnu adresu.</p>
-                <p><i class="fas fa-check-circle text-success"></i> Besplatan prevoz tepiha za sve delove grada, nezavisno od kvadrature!</p>
-                <p><i class="fas fa-check-circle text-success"></i> Dolazimo na vašu adresu u slučaju da vam je potrebno pranje nameštaja!</p>
-                <p><i class="fas fa-check-circle text-success"></i> Zakazivanje se vrši danas za sutra (Danas za naredni radni dan) ali i danas za danas u pojedinim slučajevima!</p>
+                <p><?php echo $iconCheckCircle; ?> Dolazimo po tepihe kojima je potrebna nega i vraćamo ih u najboljem mogućem stanju na vašu kućnu adresu.</p>
+                <p><?php echo $iconCheckCircle; ?> Besplatan prevoz tepiha za sve delove grada, nezavisno od kvadrature!</p>
+                <p><?php echo $iconCheckCircle; ?> Dolazimo na vašu adresu u slučaju da vam je potrebno pranje nameštaja!</p>
+                <p><?php echo $iconCheckCircle; ?> Zakazivanje se vrši danas za sutra (Danas za naredni radni dan) ali i danas za danas u pojedinim slučajevima!</p>
             </div>
         </div>
     </div>
@@ -263,7 +263,7 @@ require('constant.php');
                         <div class="button-or-loader d-flex justify-content-center">
                             <button id="send-message" type="submit" class="btn btn-primary">Pošaljite</button>
                             <div id="loader-icon">
-                                <img  loading="lazy" data-src="assets/img/loading.gif" alt="Tepih servis i dubinsko S&J | Loading"/>
+                                <img loading="lazy" data-src="assets/img/loading.gif" alt="Tepih servis i dubinsko S&J | Loading" />
                             </div>
                         </div>
                     </div>
@@ -276,18 +276,18 @@ require('constant.php');
                         <h3 class="h1 mb-3 font-weight-light">S&J Cleaning Company</h3>
                     </li>
                     <li>
-                        <p class="h4"><i class="fas fa-phone"></i> 065 87 000 38</p>
+                        <p class="h4"><?php echo $iconPhone; ?> 065 87 000 38</p>
                     </li>
                     <li>
-                        <p class="h4"><i class="fas fa-phone"></i> 064 939 98 43</p>
+                        <p class="h4"><?php echo $iconPhone; ?> 064 939 98 43</p>
                     </li>
                     <li>
-                        <p class="h4"><i class="fas fa-map-marker-alt"></i> 1: Beograd, Radnička 3</p>
+                        <p class="h4"><?php echo $iconMap; ?> 1: Beograd, Radnička 3</p>
                     </li>
                     <li>
-                        <p class="h4"><i class="fas fa-map-marker-alt"></i> 2: Barič, Obrenovac, Baričkih Boraca 10b</p>
+                        <p class="h4"><?php echo $iconMap; ?> 2: Barič, Obrenovac, Baričkih Boraca 10b</p>
                     </li>
-                    <li><a href="mailto:office@tepihservisidubinsko.rs" class="h4 text-white font-weight-light contact-mail"><i class="fas fa-at"></i> <span>office@tepihservisidubinsko.rs</span></a></li>
+                    <li><a href="mailto:office@tepihservisidubinsko.rs" class="h4 text-white font-weight-light contact-mail"><?php echo $iconAt; ?> <span>office@tepihservisidubinsko.rs</span></a></li>
                 </ul>
                 <span class="vertical-line"></span>
             </div>
