@@ -9,7 +9,6 @@
         width: 100%;
         @include under-md {
           width: 100%;
-          
         }
       }
       .hero-slider-item-inner {
@@ -139,13 +138,13 @@
       }
     }
   }
-  #counter-slider-control{
-    button{
+  #counter-slider-control {
+    button {
       background: transparent;
       border: none;
-      svg{
+      svg {
         width: 18px;
-        path{
+        path {
           fill: #fff;
         }
       }
@@ -184,10 +183,10 @@
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
         font-weight: 300;
-        svg{
+        svg {
           width: 24px;
-          path{
-            fill:#19a719;
+          path {
+            fill: #19a719;
           }
         }
       }
@@ -255,6 +254,9 @@
     table {
       width: 100%;
       padding: 10px;
+      th{
+        font-weight: 600;
+      }
       tr {
         line-height: 30px;
         td {
@@ -313,40 +315,6 @@
 #contact {
   max-width: 100vw;
   overflow-x: hidden;
-  .contact-left {
-    #contactForm {
-      textarea {
-        min-height: 150px;
-        resize: none;
-      }
-      .button-and-recaptcha {
-        .recaptcha-holder {
-          height: 50px;
-          width: 195px;
-          .g-recaptcha {
-            transform: scale(0.6410249);
-            transform-origin: top left;
-          }
-        }
-        .button-or-loader {
-          width: 83px;
-          #send-message {
-            line-height: 50px;
-            padding: 0 10px;
-            border: none;
-          }
-          #loader-icon {
-            display: none;
-            height: 50px;
-            img {
-              height: 100px;
-              margin: -25px auto;
-            }
-          }
-        }
-      }
-    }
-  }
   .contact-right {
     .vertical-line {
       position: absolute;
@@ -361,15 +329,16 @@
         rgba(#fff, 0)
       );
     }
-    li p, li a {
+    li p,
+    li a {
       font-weight: 300;
-      svg{
+      svg {
         width: 24px;
       }
     }
     @media screen and (max-width: 390px) {
       .contact-mail {
-        i{
+        i {
           vertical-align: middle;
         }
         span {

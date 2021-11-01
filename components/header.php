@@ -14,13 +14,17 @@
 
         gtag('config', 'UA-193704911-1');
     </script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title><?php echo $title; ?></title>
-
+    <style>
+        <?php include('assets/css/main.min.css');?>
+    </style>
+    <!-- Css Files -->
+    <!-- <link rel="stylesheet" href="assets/css/main.min.css?ver=2.1.5"> -->
+    <!-- Preloads -->
+    <link rel="preload" href="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1-m.webp" as="image" media="(max-width:649px)">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
@@ -44,7 +48,6 @@
     <meta name="copyright" content="https://www.tepihservisidubinsko.rs">
     <meta name="robots" content="index, follow">
     <meta name="rating" content="general">
-
     <!-- OG -->
     <meta property="og:title" content="Tepih servis i dubinsko pranje nameštaja | Pranje tepiha već od 180rsd/m2">
     <meta property="og:site_name" content="Tepih servis i dubinsko pranje nameštaja S&J | Akcija: Cena već od 180 rsd/m2">
@@ -57,7 +60,6 @@
     <meta property="business:contact_data:region" content="Beograd">
     <meta property="business:contact_data:postal_code" content="11030">
     <meta property="business:contact_data:country_name" content="Serbia">
-
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Tepih servis i dubinsko pranje nameštaja | S&J | Akcija: Cena već od 180 rsd/m2">
@@ -65,21 +67,13 @@
     <meta name="twitter:description" content="Tepih servis i dubinsko pranje nameštaja. Cena već od 180RSD po m2! Za 20m2 tepih besplatno preuzimanje na teritoriji Beograda!">
     <meta name="twitter:image" content="https://www.tepihservisidubinsko.rs/assets/img/tepih-servis-i-dubinsko-pranje-social.jpg">
     <meta name="twitter:image:alt" content="Tepih servis i dubinsko pranje">
-
     <!-- Canonical -->
     <link rel="canonical" href="https://www.tepihservisidubinsko.rs/">
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-
-    <!-- Css Files -->
-    <link rel="stylesheet" href="assets/css/main.min.css?ver=2.0.2">
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>/// -->
+    <script>
+        <?php include('./node_modules/jquery/dist/jquery.min.js'); ?>
+    </script>
     <!-- Schema -->
     <script type="application/ld+json">
         {

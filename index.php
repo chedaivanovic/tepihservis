@@ -2,41 +2,6 @@
 <?php include('components/header.php') ?>
 <?php include('components/body-before.php') ?>
 
-<script>
-    $(document).ready(function(e) {
-        $("#contactForm").on('submit', (function(e) {
-            e.preventDefault();
-            $("#mail-status").hide();
-            $('#send-message').hide();
-            $('#loader-icon').show();
-            $.ajax({
-                url: "contact.php",
-                type: "POST",
-                dataType: 'json',
-                data: {
-                    "name": $('input[name="name"]').val(),
-                    "email": $('input[name="email"]').val(),
-                    "phone": $('input[name="phone"]').val(),
-                    "message": $('textarea[name="message"]').val(),
-                    "g-recaptcha-response": $('textarea[id="g-recaptcha-response"]').val()
-                },
-                success: function(response) {
-                    $("#mail-status").show();
-                    $('#loader-icon').hide();
-                    if (response.type == "error") {
-                        $('#send-message').show();
-                        $("#mail-status").attr("class", "error");
-                    } else if (response.type == "message") {
-                        $('#send-message').hide();
-                        $("#mail-status").attr("class", "success");
-                    }
-                    $("#mail-status").html(response.text);
-                },
-                error: function() {}
-            });
-        }));
-    });
-</script>
 <!-- Page Content -->
 
 <!-- Hero -->
@@ -45,7 +10,7 @@
         <div class="hero-slider-item">
             <picture>
                 <source media="(min-width:650px)" srcset="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1.jpg">
-                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1-m.jpg" alt="Tepih servis i dubinsko pranje | Vrhunsko pranje">
+                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-1-m.webp" alt="Tepih servis i dubinsko pranje | Vrhunsko pranje">
             </picture>
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
@@ -59,7 +24,7 @@
         <div class="hero-slider-item">
             <picture>
                 <source media="(min-width:650px)" srcset="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-2.jpg">
-                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-2-m.jpg" alt="Tepih servis i dubinsko pranje | Nameštaj">
+                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-2-m.webp" alt="Tepih servis i dubinsko pranje | Nameštaj">
             </picture>
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
@@ -73,7 +38,7 @@
         <div class="hero-slider-item">
             <picture>
                 <source media="(min-width:650px)" srcset="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3.jpg">
-                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3-m.jpg" alt="Tepih servis i dubinsko pranje | Cenovnik">
+                <img src="assets/img/slider/tepih-servis-i-dubinsko-pranje-slider-3-m.webp" alt="Tepih servis i dubinsko pranje | Cenovnik">
             </picture>
             <div class="hero-slider-item-inner">
                 <div class="wrapper">
@@ -133,7 +98,7 @@
     </div>
 </section>
 <!-- Transport -->
-<section id="transport" class="position position-relative">
+<section id="transport" class="position-relative">
     <img loading="lazy" data-src="assets/img/tepih-servis-i-dubinsko-pranje-transport.jpg" alt="Prevoz i dostava tepih i staza" class="transport-img">
     <div class="transport-content d-flex align-items-center">
         <div class="wrapper ">
@@ -230,9 +195,6 @@
 </section>
 
 <!-- Contact -->
-<?php
-require('constant.php');
-?>
 <section id="contact" class="bg-dark">
     <div class="wrapper">
         <div class="row">
@@ -240,35 +202,7 @@ require('constant.php');
                 <h2 class="display-4">Kontakt</h2>
             </div>
             <div class="col-12 col-md-6 px-4 contact-left" data-aos="fade-right" data-aos-offset="200">
-                <form id="contactForm" class="row py-5" action="" method="POST" novalidate="novalidate">
-                    <div class="col-12 mb-3 col-md-6">
-                        <input class="w-100 form-control required" id="user-name" name="name" type="text" placeholder="Vaše ime *" class="" aria-required="true" required>
-                    </div>
-                    <div class="col-12 mb-3 col-md-6">
-                        <input class="w-100 form-control required phone" id="user-phone" name="phone" type="text" placeholder="Vaš broj telefona *" aria-required="true" required>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <input class="w-100 form-control mail" id="user-mail" type="email" name="email" placeholder="Vaša E-mail adresa">
-                    </div>
-                    <div class="col-12 mb-3">
-                        <textarea class="w-100 form-control required " id="user-msg" name="message" id="message" placeholder="Vaša poruka *" aria-required="true" required></textarea>
-                    </div>
-                    <div class="col-12 mb-2">
-                        <div class="w-100" id="mail-status"></div>
-                    </div>
-                    <div class="col-12 d-flex justify-content-between button-and-recaptcha">
-                        <div class="recaptcha-holder">
-                            <div class="g-recaptcha" data-sitekey="<?php echo SITE_KEY; ?>"></div>
-                        </div>
-                        <div class="button-or-loader d-flex justify-content-center">
-                            <button id="send-message" type="submit" class="btn btn-primary">Pošaljite</button>
-                            <div id="loader-icon">
-                                <img loading="lazy" data-src="assets/img/loading.gif" alt="Tepih servis i dubinsko S&J | Loading" />
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
+                <?php include('components/contact-form.php'); ?>
             </div>
             <div class="col-12 col-md-6 px-4 d-flex align-items-center position-relative contact-right" data-aos="fade-left" data-aos-offset="200">
                 <ul id="contact-info" class="text-white">
@@ -294,7 +228,6 @@ require('constant.php');
         </div>
     </div>
 </section>
-
 
 <?php include('components/body-after.php') ?>
 <?php include('components/footer.php') ?>
