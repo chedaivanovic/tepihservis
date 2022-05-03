@@ -132,7 +132,7 @@
                     </tr>
                     <tr>
                         <td class="price-details">Mašinsko dubinsko pranje tepiha sa ispiranjem</td>
-                        <td class="money-price">od 210 RSD / m<sup>2</sup></td>
+                        <td class="money-price">od 250 RSD / m<sup>2</sup></td>
                     </tr>
                 </table>
                 <h2 class="prices-title">Čišćenje i pranje nameštaja</h2>
